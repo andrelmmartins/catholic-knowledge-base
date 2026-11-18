@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.env
+
+# Downloaded source pages and generated copyrighted text stay local by default.
+cache/
+data/
