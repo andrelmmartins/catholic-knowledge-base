@@ -57,3 +57,22 @@ uv run python scripts/validate_catechism.py
 - `manifest.json`: fonte, datas, contagens e status de licença.
 
 Os arquivos JSON individuais e Markdown são derivados do JSONL, evitando divergência entre formatos.
+## Testes automatizados
+
+```bash
+uv run pytest
+```
+
+## Regenerar os formatos derivados
+
+Depois de coletar os parágrafos, você pode recriar os JSON individuais e o Markdown a partir do JSONL:
+
+```bash
+uv run python scripts/export_catechism.py
+```
+
+Para validar a estrutura do JSONL:
+
+```bash
+uv run python scripts/validate_catechism.py
+```
